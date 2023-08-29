@@ -1,62 +1,90 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <style>
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: blueviolet;
-            color: white;
-            padding: 10px 20px;
-            flex-direction: column;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.I Talks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-        .nav-item {
-            margin-right: 15px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" />
 
 </head>
-
 <body>
 
-    <nav class="navbar">
-        <div class="logo"> Logo </div>
-        <div class="nav">
-            <li class="nav-item">Pagina inicial</li>
-            <li class="nav-item">Sobre</li>
-            <li class="nav-item">Contato</li>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row gy-4">
-            <div class="col-6">
-                <div class="p-4 bg-info"> Coluna 1</div>
+    <header class="main">
+            <div class~="center">
+                <div class="menu">
+                    <div class="logo-menu">
+                        <a href="/"><img src="images/logo.png"/> </a>
+                    </div> 
+                    <div class="itens-menu">
+                        <a href="#">Inicio</a>
+                        <a href="#">Palestrantes</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Agenda</a>
+                        <a class="contact-btn" href="#">Faça sua inscrição</a>
+                    </div>                 
+                </div><!--menu--> 
+            </div><!--center-->
+    </header><!--main-->
+    <section class="carousel" >
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <!--Indicadores para navegar nos slides do carousel-->            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="col-6">
-                <div class="p-4 bg-success"> Coluna 2</div>
+            <!--Fim indicadores para navegar nos slides do carousel-->            
+
+            <!--Inicio slide carousel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/Banner1.png" height="500" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="images/banner2.png" height="500" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="images/banner3.png" height="500" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <div class="col-3 bg-warning"> Coluna 3 </div>
-            <div class="col-2 bg-success"> Coluna 4 </div>
+            <!--FIm slide carousel-->
+
+            <!--Inicio anterior e proximo slide-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <!--fim anterior e proximo slide-->
         </div>
-    </div>
+    </section>
+    <section class="Palestrantes">
+        <h1>Palestrantes</h1>
+        <div class="card" style="width: 18rem;">
+            <img src="images/palestrante2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/palestrante4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </body>
-
 </html>

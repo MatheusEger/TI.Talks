@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section.main{
+    background-image: url('images/bg.svg');
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+}
+
+.logo-menu img{
+    width: 150px;
+   
+}
+
+.menu{display: flex; width: 100%;}
+
+.logo-menu{width: 50%;padding: 0 15%; }
+
+.itens-menu{width: 50%;
+    padding: 1%;
+    text-align: center;
+}
+
+.itens-menu a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.itens-menu a:hover{
+    border-bottom: 2px solid cornsilk;
+}
+
+.itens-menu a.contact-btn{
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+
+}
+
+.itens-menu a.contact-btn:hover{
+    border: 0;
+}
+
+header{
+    background-color: #225ca3;
+}
+
+.Palestrantes{
+    display: flex;
+    padding: 0 2%;
+    margin: 0 auto;
+}
