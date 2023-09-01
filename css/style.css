@@ -394,6 +394,7 @@ footer i{
         justify-content: center;
         clip-path: circle(0% at 100% 0);
         transition: 0.7s;
+        z-index: 1;
     } 
 
     .menu.open{
