@@ -9,7 +9,11 @@
     font-family: 'Barlow', sans-serif;
 }
 
-bady{
+a {
+    text-decoration: none;
+}
+
+body{
     background-color: #f1f6fc31;
 }
 
@@ -276,6 +280,7 @@ footer i{
 .sobre .sobre-text{
     width: 50%;
     padding-right: 40px;
+    align-items: center;
 }
 
 .sobre .sobre-text p{
