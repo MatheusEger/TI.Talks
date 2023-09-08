@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>T.I Talks | Palestrantes</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <header style="background-image: url('../images/banner-pale.png');">
+            <div class="container" >
+                <nav>
+                    <a href="/index.html">
+                        <img src="../images/logo.png" alt="logo">
+                    </a> 
+                    <ul class="menu">
+                        <a href="index.html">Inicio</a>
+                        <a href="palestrantes.html">Palestrantes</a>
+                        <a href="sobre.html">Sobre</a>
+                        <a href="agenda.html">Agenda</a>
+                        <a href="contato.html">Contato</a>
+                        <a class="btn" href="inscricao.html">Faça sua inscrição</a>
+                        <div class="close-icon" onclick="closeMenu()">
+                            <i class="fa fa-times-circle"></i>
+                        </div>
+                    </ul>  
+                    <div class="menu-icon" onclick="openMenu()">
+                        <i class="fa fa-bars"></i>
+                    </div>               
+                </nav>
+                <section class="banner">
+                    <div class="banner-text">
+                        <h1>Palestrantes</h1>
+                    </div>
+                </section> 
+            </div><!--center-->
+    </header>
+  
+    <section class="palestrantes">
+        <div class="convidados">
+            <h3>Palestrantes</h3>
+            <input type="text" id="filtroNome" placeholder="Filtrar por nome" class="p-2 m-2">
+            <div class="containerCarrossel d-flex">
+                <div class="divulgacao p-2">
+                    <h3>Conheça nosso Time Exclusivo</h3>
+                    <a href="inscricao.html" class="btn animate-btn">Faça sua inscrição</a>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide p-2 flex-grow-1">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div id="palestrantes" class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. Ana Silva</h5>
+                                        <p class="card-text">Renomada futurista e especialista em transformações digitais. Com um Ph.D. em Estudos de Tecnologia, ela se dedica a compreender como as inovações tecnológicas moldam a sociedade e as organizações. Sua experiência é amplamente reconhecida por suas palestras inspiradoras e publicações sobre o impacto das tecnologias emergentes na vida cotidiana.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Marcos Costa</h5>
+                                        <p class="card-text">Executivo com ampla experiência na indústria de tecnologia. Ele é cofundador de uma startup de sucesso focada em soluções de Inteligência Artificial para empresas e também atuou em empresas multinacionais liderando transformações digitais.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Prof. André Almeida</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. João Rodrigues</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gabriela Torres</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Prof. Rafael Nunes</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. Pedro Martins</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dra. Sofia Fernandes</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper palestrante">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../images/palestrante2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Prof. Lucas Carvalho</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dados">
+        <div class="container">
+            <!-- Dados item -->
+            <div class="dados-item">
+                <img src="../images/logo.png" alt=""> 
+                <p>
+                    <strong>Valor do dado</strong> <br>
+                    Alguma informação do dado
+                </p>
+            </div>
+            <!-- Fim dados item -->
+            <!-- Dados item -->
+            <div class="dados-item">
+                <img src="../images/logo.png" alt=""> 
+                <p>
+                    <strong>Valor do dado</strong> <br>
+                    Alguma informação do dado
+                </p>
+            </div>
+            <!-- Fim dados item -->
+            <!-- Dados item -->
+            <div class="dados-item">
+                <img src="../images/logo.png" alt=""> 
+                <p>
+                    <strong>Valor do dado</strong> <br>
+                    Alguma informação do dado
+                </p>
+            </div>
+            <!-- Fim dados item -->
+            <!-- Dados item -->
+            <div class="dados-item">
+                <img src="../images/logo.png" alt=""> 
+                <p>
+                    <strong>Valor do dado</strong> <br>
+                    Alguma informação do dado
+                </p>
+            </div>
+            <!-- Fim dados item -->
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a  href="#"><i class=""></i></a>
+            </div>
+            <p>Desolvolido por </p>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

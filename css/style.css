@@ -45,8 +45,8 @@ p{
     transition: 0.1s;
 }
 
-
 .btn.animate-btn{
+    margin-top: 1rem;
     animation: animate-outline 1s ease-out infinite;
 }
 
@@ -338,6 +338,9 @@ footer i{
     padding: 9px;
 }
 
+.divulgacao {
+    width: 25%;
+}
 
 /* dados */
 .dados{
