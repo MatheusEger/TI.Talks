@@ -20,7 +20,7 @@ function filtrarPalestrantes() {
     var filtro = document.getElementById("filtroNome").value.toLowerCase();
 
     // Obtém todos os cards de palestrantes
-    var palestrantes = document.getElementsByClassName("col-md-4");
+    var palestrantes = document.getElementsByClassName("filtrar");
 
     // Loop através dos cards de palestrantes
     for (var i = 0; i < palestrantes.length; i++) {
