@@ -16,14 +16,20 @@ const palestrantes = document.querySelectorAll(".palestrante");
 filtroNomeInput.addEventListener("input", filtrarPalestrantes);
 
 function filtrarPalestrantes() {
-    const filtroNome = filtroNomeInput.value.toLowerCase();
+    // Obtém o valor do input de filtro
+    var filtro = document.getElementById("filtroNome").value.toLowerCase();
 
-    palestrantes.forEach(palestrante => {
-        const nome = palestrante.querySelector("h5").textContent.toLowerCase();
-        if (nome.includes(filtroNome)) {
-            palestrante.style.display = "block";
+    // Obtém todos os cards de palestrantes
+    var palestrantes = document.getElementsByClassName("col-md-4");
+
+    // Loop através dos cards de palestrantes
+    for (var i = 0; i < palestrantes.length; i++) {
+        var nomePalestrante = palestrantes[i].querySelector(".card-title").innerText.toLowerCase();
+        // Verifica se o nome do palestrante contém o texto de filtro
+        if (nomePalestrante.includes(filtro)) {
+            palestrantes[i].style.display = "block"; // Mostra o card
         } else {
-            palestrante.style.display = "none";
+            palestrantes[i].style.display = "none"; // Oculta o card
         }
-    });
+    }
 }
