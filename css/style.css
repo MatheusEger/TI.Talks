@@ -405,13 +405,14 @@ font-size: 50%;
     justify-content: center;
     align-items: center;
     padding: 3rem;
-
+    padding-bottom: 50px;
 }
 
 
 .form-header {
     margin-bottom: 3rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
    
 }
@@ -486,7 +487,7 @@ font-size: 50%;
 .gender-title h6 {
     font-size: 0.75rem;
     font-weight: 600;
-    color: #ffffffc0;
+    color: black;
 }
 
 .input-box input::placeholder {
@@ -512,7 +513,7 @@ font-size: 50%;
 .gender-input label {
     font-size: 0.81rem;
     font-weight: 600;
-    color: #ffffffc0;
+    color: black;
 }
 
 .continue-button button {
